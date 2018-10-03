@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie Site</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+  </head> 
+  <body>
+  
+<!-- navbar -->
+
+    <section>
+  			<nav class="navbar navbar-fixed-top">
+  			  <div class="navhead container">
+
+            <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+
+
+                <a class="navbar-brand" href="#">
+                  <img alt="Brand" src="images/logo.png">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav ">
+                  <li class="active hvr-curl-top-left"><a href="#body">Home <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#cinema">Cinema</a></li>
+                  <li><a href="#movies">Movies</a></li>
+                  <li><a href="#series">Series</a></li>
+                  <li><a href="#cartoon">Cartoon</a></li>
+                  </ul>
+                
+                <div class="navbar-right">
+                  <form>
+                  <input style="color:#999999;" class="form-control" placeholder="Search Here" type="text">
+                  </form>
+                </div>
+            </div><!-- /.navbar-collapse -->
+
+  			  </div>
+  			</nav>
+      </section>
+	  
+ <!-- navbar -->    
+  
+ <!-- slider  -->
+
+<section>
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+      <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner " role="listbox">
+
+        <div class="item active ab-caption">
+        <img src="images/s1.jpg" alt="1">
+        <div class="carousel-caption ">
+        <h2 class="wow bounceInDown ab-caption-text"><span>The Conjuring 2</span></h2>
+        </div>
+        </div>
+
+
+        <div class="item ab-caption">
+        <img src="images/s2.jpg" alt="2">
+        <div class="carousel-caption ">
+        <h2 class="wow bounceInDown ab-caption-text"><span>I</span>ce <span>A</span>ge</h2>
+        </div>
+        </div>
+
+        <div class="item ab-caption">
+        <img src="images/s3.jpg" alt="2">
+        <div class="carousel-caption ">
+        <h2 class="wow bounceInDown ab-caption-text"><span>T</span>arzan</h2>
+        </div>
+        </div>
+
+      ...
+      </div>
+
+
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+      </a>
+
+  </div>
+</section>
+	  
+	  
+ <!-- slider --> 
+
+
+<!-- last cinema banner -->
+<div class="banner" id="cinema">
+  <div class="container">
+      <div class=" ml-title row">
+           <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12"> <a href="#"><img class="img-responsive" width="500" height="38" src="images/a.png"></a></div>
+           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> <a href="#" class="pull-right"><img class="img-responsive pull" width="100" height="28" src="images/aa.png"></a></div>
+      </div>
+            <ul id="flexiselDemo1">
+                <li><a href="#">
+                  <div class="banner-1">
+                    <img src="images/1.jpg" class="img-responsive" alt="">
+                    <div class="banner-bottom">
+                      <h4>Movies One</h4>
+                      <p>2018</p>
+                    </div>
+                  </div></a>
+                </li>
+                <li>
+                <a href="#">
+                  <div class="banner-1">
+                    <img src="images/2.jpg" class="img-responsive" alt="">
+                    <div class="banner-bottom">
+                      <h4>Movies Two</h4>
+                      <p>2017</p>
+                    </div>
+                  </div></a>
+                </li>
+                <li>
+                <a href="#">
+                  <div class="banner-1">
+                    <img src="images/3.jpg" class="img-responsive" alt="">
+                    <div class="banner-bottom">
+                      <h4>Movies Three</h4>
+                      <p>2016</p>
+                    </div>
+                  </div></a>
+                </li>
+                <li>
+                <a href="#">
+                  <div class="banner-1">
+                    <img src="images/4.jpg" class="img-responsive" alt="">
+                    <div class="banner-bottom">
+                      <h4>Movies Four</h4>
+                      <p>2015</p>
+                    </div>
+                  </div></a>
+                </li>
+             </ul>
+          
+           <script type="text/javascript">
+            $(window).load(function() {
+              
+              $("#flexiselDemo1").flexisel({
+                visibleItems: 4,
+                animationSpeed: 1000,
+                autoPlay: true,
+                autoPlaySpeed: 3000,    		
+                pauseOnHover: true,
+                enableResponsiveBreakpoints: true,
+                responsiveBreakpoints: { 
+                  portrait: { 
+                    changePoint:480,
+                    visibleItems: 2
+                  }, 
+                  landscape: { 
+                    changePoint:640,
+                    visibleItems: 3
+                  },
+                  tablet: { 
+                    changePoint:768,
+                    visibleItems: 3
+                  }
+                }
+              });
+              
+            });
+            </script>
+            
+      <div class="clearfix"> </div>
+  </div>
+</div>
+<!-- last cinema banner  -->
+
+<!-- last movies banner -->
+<div class="banner" id="movies">
+  <div class="container">
+      <div class=" ml-title row">
+           <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12"> <a href="#"><img class="img-responsive" width="500" height="38" src="images/b.png"></a></div>
+           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> <a href="#" class="pull-right"><img class="img-responsive pull" width="100" height="28" src="images/aa.png"></a></div>
+      </div>
+            <ul id="flexiselDemo2">
+              <li><a href="#">
+                <div class="banner-1">
+                  <img src="images/1.jpg" class="img-responsive" alt="">
+                  <div class="banner-bottom">
+                    <h4>Movies One</h4>
+                    <p>2018</p>
+                  </div>
+                </div></a>
+              </li>
+              <li>
+              <a href="#">
+                <div class="banner-1">
+                  <img src="images/2.jpg" class="img-responsive" alt="">
+                  <div class="banner-bottom">
+                    <h4>Movies Two</h4>
+                    <p>2017</p>
+                  </div>
+                </div></a>
+              </li>
+              <li>
+              <a href="#">
+                <div class="banner-1">
+                  <img src="images/3.jpg" class="img-responsive" alt="">
+                  <div class="banner-bottom">
+                    <h4>Movies Three</h4>
+                    <p>2016</p>
+                  </div>
+                </div></a>
+              </li>
+              <li>
+              <a href="#">
+                <div class="banner-1">
+                  <img src="images/4.jpg" class="img-responsive" alt="">
+                  <div class="banner-bottom">
+                    <h4>Movies Four</h4>
+                    <p>2015</p>
+                  </div>
+                </div></a>
+              </li>
+             </ul>
+          
+           <script type="text/javascript">
+            $(window).load(function() {
+              
+              $("#flexiselDemo2").flexisel({
+                visibleItems: 4,
+                animationSpeed: 1000,
+                autoPlay: true,
+                autoPlaySpeed: 3000,    		
+                pauseOnHover: true,
+                enableResponsiveBreakpoints: true,
+                responsiveBreakpoints: { 
+                  portrait: { 
+                    changePoint:480,
+                    visibleItems: 2
+                  }, 
+                  landscape: { 
+                    changePoint:640,
+                    visibleItems: 3
+                  },
+                  tablet: { 
+                    changePoint:768,
+                    visibleItems: 3
+                  }
+                }
+              });
+              
+            });
+            </script>
+            
+      <div class="clearfix"> </div>
+  </div>
+</div>
+<!-- last movies banner  -->
+
+<!-- last series banner -->
+<div class="banner" id="series">
+  <div class="container">
+      <div class=" ml-title row">
+           <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12"> <a href="#"><img class="img-responsive" width="500" height="38" src="images/c.png"></a></div>
+           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> <a href="#" class="pull-right"><img class="img-responsive pull" width="100" height="28" src="images/aa.png"></a></div>
+      </div>
+            <ul id="flexiselDemo3">
+              <li><a href="#">
+                <div class="banner-1">
+                  <img src="images/1.jpg" class="img-responsive" alt="">
+                  <div class="banner-bottom">
+                    <h4>Movies One</h4>
+                    <p>2018</p>
+                  </div>
+                </div></a>
+              </li>
+              <li>
+              <a href="#">
+                <div class="banner-1">
+                  <img src="images/2.jpg" class="img-responsive" alt="">
+                  <div class="banner-bottom">
+                    <h4>Movies Two</h4>
+                    <p>2017</p>
+                  </div>
+                </div></a>
+              </li>
+              <li>
+              <a href="#">
+                <div class="banner-1">
+                  <img src="images/3.jpg" class="img-responsive" alt="">
+                  <div class="banner-bottom">
+                    <h4>Movies Three</h4>
+                    <p>2016</p>
+                  </div>
+                </div></a>
+              </li>
+              <li>
+              <a href="#">
+                <div class="banner-1">
+                  <img src="images/4.jpg" class="img-responsive" alt="">
+                  <div class="banner-bottom">
+                    <h4>Movies Four</h4>
+                    <p>2015</p>
+                  </div>
+                </div></a>
+              </li>
+             </ul>
+          
+           <script type="text/javascript">
+            $(window).load(function() {
+              
+              $("#flexiselDemo3").flexisel({
+                visibleItems: 4,
+                animationSpeed: 1000,
+                autoPlay: true,
+                autoPlaySpeed: 3000,    		
+                pauseOnHover: true,
+                enableResponsiveBreakpoints: true,
+                responsiveBreakpoints: { 
+                  portrait: { 
+                    changePoint:480,
+                    visibleItems: 2
+                  }, 
+                  landscape: { 
+                    changePoint:640,
+                    visibleItems: 3
+                  },
+                  tablet: { 
+                    changePoint:768,
+                    visibleItems: 3
+                  }
+                }
+              });
+              
+            });
+            </script>
+            
+      <div class="clearfix"> </div>
+  </div>
+</div>
+<!-- last series banner  -->
+
+<!-- last cartoon banner -->
+<div class="banner" id="cartoon">
+  <div class="container">
+      <div class=" ml-title row">
+           <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12"> <a href="#"><img class="img-responsive" width="500" height="38" src="images/d.png"></a></div>
+           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> <a href="#" class="pull-right"><img class="img-responsive pull" width="100" height="28" src="images/aa.png"></a></div>
+      </div>
+            <ul id="flexiselDemo4">
+              <li><a href="#">
+                <div class="banner-1">
+                  <img src="images/1.jpg" class="img-responsive" alt="">
+                  <div class="banner-bottom">
+                    <h4>Movies One</h4>
+                    <p>2018</p>
+                  </div>
+                </div></a>
+              </li>
+              <li>
+              <a href="#">
+                <div class="banner-1">
+                  <img src="images/2.jpg" class="img-responsive" alt="">
+                  <div class="banner-bottom">
+                    <h4>Movies Two</h4>
+                    <p>2017</p>
+                  </div>
+                </div></a>
+              </li>
+              <li>
+              <a href="#">
+                <div class="banner-1">
+                  <img src="images/3.jpg" class="img-responsive" alt="">
+                  <div class="banner-bottom">
+                    <h4>Movies Three</h4>
+                    <p>2016</p>
+                  </div>
+                </div></a>
+              </li>
+              <li>
+              <a href="#">
+                <div class="banner-1">
+                  <img src="images/4.jpg" class="img-responsive" alt="">
+                  <div class="banner-bottom">
+                    <h4>Movies Four</h4>
+                    <p>2015</p>
+                  </div>
+                </div></a>
+              </li>
+             </ul>
+          
+           <script type="text/javascript">
+            $(window).load(function() {
+              
+              $("#flexiselDemo4").flexisel({
+                visibleItems: 4,
+                animationSpeed: 1000,
+                autoPlay: true,
+                autoPlaySpeed: 3000,    		
+                pauseOnHover: true,
+                enableResponsiveBreakpoints: true,
+                responsiveBreakpoints: { 
+                  portrait: { 
+                    changePoint:480,
+                    visibleItems: 2
+                  }, 
+                  landscape: { 
+                    changePoint:640,
+                    visibleItems: 3
+                  },
+                  tablet: { 
+                    changePoint:768,
+                    visibleItems: 3
+                  }
+                }
+              });
+              
+            });
+            </script>
+            
+      <div class="clearfix"> </div>
+  </div>
+</div>
+<!-- last cartoon banner  -->
+
+<!-- footer section -->
+
+<footer id="footer">
+   <div class="container">
+
+      <section class="row">
+        <div class="col-lg-4">
+            <h3 class="first">Movies</h3>
+
+            <p><a title="Action" href="#">Action</a></p>
+
+            <p><a title="Adventure" href="#">Adventure</a></p>
+
+            <p><a title="Sport" href="#">Sport</a></p>
+
+            <p><a title="Thriller" href="#">Thriller</a></p>
+
+            <p><a title="Sci-Fi" href="#">Sci-Fi</a></p>
+
+            <p><a title="Horror" href="#">Horror</a></p>
+        </div>
+
+        <div class="col-lg-4">
+            <h3 class="first">TV-Series</h3>
+
+            <p><a title="United-States" href="#">United States</a></p>
+
+            <p><a title=">South-Korea" href="#">South Korea</a></p>
+
+            <p><a title="Arabic" href="#">Arabic</a></p>
+
+            <p><a title="Turkey" href="#">Turkey</a></p>
+
+            <p><a title="China" href="#">China</a></p>
+
+            <p><a title="Japan" href="#">Japan</a></p>
+        </div>
+
+        <div class="col-lg-4">
+            <h3 class="first">Search</h3>
+
+            <h5 class="sec">Search any movie you want to watch, Simple way to watch thousands movies and tv shows online</h5>
+
+            <form>
+            <input style="color:#999999;" class="form-control " placeholder="Search Here" type="text">
+            </form>
+        </div>
+      </section>
+
+			<section class="copyright">
+			  <h5>Copyright © 2018 All Rights Reserved. Made with by Mohamed Moneim</h5>
+			</section>
+
+      <section class="footer-tags">
+          <a title="Watch full movies online">Watch full movies online</a>
+          <a title="Free movies online">Free movies online</a>
+          <a title="Free online movies full">Free online movies full</a>
+          <a title="HD Online">HDOnline</a>
+          <a title="Watch series">Watch Series</a>
+          <a title="Free Series online">Free Series online</a>
+      </section>
+			
+  </div>
+</footer>
+
+<!-- footer section -->
+
+
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/script.js"></script>
+  </body>
+</html>
+
